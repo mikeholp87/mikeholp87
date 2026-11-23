@@ -24,4 +24,4 @@ Tasky, Luma Launcher and Restic Studio install from my signed apt repository, so
 
 [YouTube](https://www.youtube.com/@ai-automation-station) · [LinkedIn](https://www.linkedin.com/in/mikeholp) · [X](https://x.com/mikeholp) · [All projects](https://mikeholp87.github.io)
 
-If a project is useful to you, a ⭐ on the repo helps other people find it.
+If a project is useful to you, a ⭐ on the repo helps other people find it, and you can support the work through [GitHub Sponsors](https://github.com/sponsors/mikeholp87) 💖.
