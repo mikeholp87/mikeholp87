@@ -18,7 +18,7 @@ I build open-source desktop tools for Linux and Windows, mostly with AI coding a
 
 More: [Disk Atlas](https://github.com/mikeholp87/disk-atlas) (disk usage analyzer), [Strata Editor](https://github.com/mikeholp87/strata-editor) (C++20 and Qt 6 text editor), [herdr-mods](https://github.com/mikeholp87/herdr-mods) (mods for the Herdr app), [msi-control-linux](https://github.com/mikeholp87/msi-control-linux) (MSI NUC hardware monitor) and [ExtentPilot](https://github.com/mikeholp87/defrag-hdd-linux) (file fragmentation analyzer).
 
-Most of these install from my signed apt repository: [mikeholp87.github.io/apt](https://mikeholp87.github.io/apt/).
+Tasky, Luma Launcher and Restic Studio install from my signed apt repository, so `apt install` and `apt upgrade` just work: [mikeholp87.github.io/apt](https://mikeholp87.github.io/apt/).
 
 ## Where to find me
 
