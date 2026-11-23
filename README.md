@@ -24,18 +24,38 @@ More: [Disk Atlas](https://github.com/mikeholp87/disk-atlas) (Linux disk usage a
 
 ## Install on Debian and Ubuntu
 
-Tasky, Luma Launcher, Restic Studio and Strata Editor install from my signed apt repository, so
-`apt install` and `apt upgrade` work as usual:
+Five of my apps install from one signed apt repository, so `apt install` and `apt upgrade` work as
+usual. Updates arrive through your normal system updates.
+
+**Step 1. Add the repository once** (key, source line, refresh):
 
 ```bash
 sudo install -d -m 0755 /etc/apt/keyrings
 curl -fsSL https://mikeholp87.github.io/apt/apt.asc | sudo tee /etc/apt/keyrings/mikeholp87-apt.asc >/dev/null
 echo "deb [signed-by=/etc/apt/keyrings/mikeholp87-apt.asc] https://mikeholp87.github.io/apt/ ./" | sudo tee /etc/apt/sources.list.d/mikeholp87-apt.list
 sudo apt update
-sudo apt install tasky
 ```
 
-Details and the full package list: [mikeholp87.github.io/apt](https://mikeholp87.github.io/apt/).
+**Step 2. Install the apps you want.** Open each one from your app menu after installing.
+
+| App | Install command | Works on |
+|---|---|---|
+| [Tasky](https://mikeholp87.github.io/Tasky/) task manager and system monitor | `sudo apt install tasky` | Debian 12+ and Ubuntu 22.04+ |
+| [Luma Launcher](https://mikeholp87.github.io/Luma-Launcher/) app launcher | `sudo apt install luma-launcher` | Debian 13+ and Ubuntu 24.04+, including Linux Mint 22 |
+| [Update Forge](https://mikeholp87.github.io/update-forge/) software updater | `sudo apt install updateforge` | Debian-based systems with a desktop session. The package name has no hyphen. |
+| [Strata Editor](https://mikeholp87.github.io/strata-editor/) Markdown and code editor | `sudo apt install strata-editor` | Ubuntu 24.04 and Debian testing |
+| [Restic Studio](https://mikeholp87.github.io/Restic-Studio/) Restic GUI for backups | `sudo apt install restic-studio` | Recent systems only: it needs Restic 0.19, GTK 4.24 and libadwaita 1.10 (Debian testing or sid at the time of writing) |
+
+Install several at once with `sudo apt install tasky luma-launcher updateforge strata-editor`. Update
+everything with `sudo apt update && sudo apt upgrade`, and remove an app with
+`sudo apt remove tasky` (use its package name).
+
+The package list and notes live at [mikeholp87.github.io/apt](https://mikeholp87.github.io/apt/).
+
+**Not in apt yet:** [Aegis VPN](https://github.com/mikeholp87/aegis-vpn) (pre-alpha, build from source),
+[Disk Atlas](https://github.com/mikeholp87/disk-atlas), [ExtentPilot](https://github.com/mikeholp87/defrag-hdd-linux),
+[msi-control-linux](https://github.com/mikeholp87/msi-control-linux) and
+[herdr-mods](https://github.com/mikeholp87/herdr-mods). Each repository explains how to run it.
 
 ## Skills and technologies
 
